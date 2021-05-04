@@ -1,6 +1,7 @@
 const form = document.querySelector('form');
 const input = form.querySelector('input');
 const result = document.querySelector('.search-result');
+const cont = document.querySelector('.loading');
 
 const API_ID = "7c5e1a13";
 const API_KEYS = "7ac1f21706e4adfe2ecb762407ab5b60";
@@ -22,6 +23,7 @@ async function fetchAPI(){
 }
 
 function generateHTML(re){
+    cont.classList.add('remover');
     let generatedHTML = '';
     re.map(ee =>{
         generatedHTML += 
