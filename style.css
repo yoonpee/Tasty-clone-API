@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins&display=swap');
+*{margin: 0;padding: 0;}
+body{font-family: 'Pangolin', cursive;}
+.header{
+    width: 100%; 
+    background:#79dcf1;;
+    color:#111; margin-bottom: 80px;
+    
+}
+.header .inner{width: 1180px; margin:0 auto;position: relative; height: 70px;}
+.header .inner h1{ font-size: 70px; position: absolute; top:10px; left:0px; letter-spacing: -10px;}
+.header .inner ul {position: absolute; left:18%; top:50%; transform:translateY(-50%);overflow:hidden; font-weight: 800;}
+.header .inner ul li{
+    float: left; list-style: none;
+}
+.header .inner ul li a{
+    text-decoration: none; color:#111; font-size: 22px;
+    margin:13px;
+}
+.header .inner ul li a:hover{
+    color: #e40754;
+}
+.header .inner .form-search{
+    position: absolute; right:0px; top:50%;  transform: translateY(-50%);
+    display: flex; justify-content: center; align-items: center;
+    background:#fff; border-radius: 20px;
+    padding:5px 10px;
+    
+}
+.header .inner .form-search i{
+    font-size: 15px;  margin-right: 10px;
+    color:#777;
+    
+}
+.header .inner .form-search input{
+    padding:5px 10px; border:none;
+    border-radius: 20px; padding-right: 70px;
+    color:#777; letter-spacing: 1px;
+    outline:0;
+    
+}
+.container{width: 100%;}
+.container .inner {width: 1180px; margin:0 auto; }
+.container .inner .search-result{
+    display: grid; grid-template-columns: repeat(4, 1fr); gap:20px;
+    
+}
+.container .inner .search-result .item{
+     width: 280px;   overflow: hidden;
+}
+.container .inner .search-result .item:nth-of-type(4n){
+    margin-right: 0px;
+}
+
+.container .inner .search-result .item .pimg {width: 100%; height: 280px;transition: all 1s; overflow: hidden; }
+
+.container .inner .search-result .item img{transition: all 1s; transform: scale(1); width: 100%;  height: 100%;}
+.container .inner .search-result .item img:hover{
+    transform: scale(1.2); 
+}
+.container .search-result .item .flex-item{
+    display: flex; align-items: center; justify-content: space-between; margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container .search-result .item h2{
+    font-size: 29px; font-family: 'Pangolin', cursive;
+
+}
+.container .search-result .item .btn{
+    text-decoration: none; width: 110px; height: 40px; text-align: center;
+    background:#79dcf1; border-radius: 20px; display: flex;justify-content: center; align-items: center;
+    color:#fff; font-size: 15px; cursor: pointer;
+}
+.container .search-result .item > p{
+    margin-bottom: 5px;
+}
+.loading{ width: 1200px; height: 550px; margin:0 auto; display: flex; padding-top: 20px; } 
+.loading .txtBox{ width: 55%; display: flex; flex-direction: column;justify-content: center;}
+.loading .txtBox h3{ font-size: 28px; margin-bottom: 15px;}
+.loading .txtBox > h2{ 
+    background:#e40754; font-size: 60px; width: 90%; color:#fff; text-align: center;
+}
+.loading .imgBox {width: 45%; text-align: right; }
+.loading img{width: 100%; height: 100%;}
+.loading.remover {display: none;}
+@media screen and (max-width:1145px){
+    .header .inner{width: 100%;}
+    .container .inner{width: 100%;}
+    .container .inner .search-result{grid-template-columns: repeat(3, 1fr);}
+    .container .inner .search-result .item{width: 100%;}
+    .loading{width: 100%;}
+}
+@media screen and (max-width:853px){
+    .header .inner h1{font-size: 50px; top:10px;}
+    .header .inner ul {left:17%;}
+    .header .inner ul li a{
+        font-size: 14px;
+    }
+    
+    .container .inner .search-result{grid-template-columns: repeat(2, 1fr);}
+    .loading{flex-direction: column;}
+    .loading .txtBox{width: 100%; text-align: center;  margin-bottom: 30px;}
+    .loading .txtBox h2{ margin:0 auto;}
+    .loading .imgBox{width: 100%; height: 500px; margin:0 auto;}
+    .loading .imgBox img{width: 100%; height: 100%;}
+}
+@media screen and (max-width:673px){
+    .header .inner ul {display: none;}
+    .container .inner .search-result{grid-template-columns: repeat(1, 1fr);}
+    .loading .txtBox h2{ font-size: 30px;}
+}
