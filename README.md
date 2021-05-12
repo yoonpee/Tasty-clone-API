@@ -3,3 +3,4 @@
 
 * Javascript DOM
 * Javascript fetch
+* Once you search certain food, it will show the all the relevent foods of your searching indicating the name, calories, diet label as well as the URL of the recipe websites.
