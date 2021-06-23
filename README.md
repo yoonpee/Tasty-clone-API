@@ -1,6 +1,11 @@
-![스크린샷 2021-05-04 오후 5 29 51](https://user-images.githubusercontent.com/73012145/116978221-628cd700-acfe-11eb-9f82-5012c619ceac.png)
+![스크린샷 2021-06-23 오후 2 47 52](https://user-images.githubusercontent.com/73012145/123042743-39511300-d432-11eb-81a6-aa14e77edd59.png)
+![스크린샷 2021-06-23 오후 2 48 39](https://user-images.githubusercontent.com/73012145/123042765-42da7b00-d432-11eb-8ccc-a0c58c7b341a.png)
+
 # Tasty-clone-API
 
-* Javascript DOM
-* Javascript fetch
-* Once you search certain food, it will show the all the relevent foods of your searching indicating the name, calories, diet label as well as the URL of the recipe websites.
+* Tasty 앱 디자인에 영감을 받은 레시피 웹사이트입니다. 무엇이 먹고싶던, 무엇을 원하던 입력창에 입력만 한다면 그 음식, 혹은 재료에 관련된 모든 음식이 나열되며 각각의 음식의 칼로리, 균형이 잡힌 음식인지 아닌지에 대한 정보와, 만약에 api에 그 정보가 없다면 No data found 나오게 됩니다. 그리고 옆에있는 버튼을 누르면 그 음식에 대한 구체적인 레시피가 담긴 사이트로 이동하게 됩니다.
+* Javascript Fetch 를 이용하여서 API를 불러왔고 원하는 음식을 입력하여 제출하는 폼을 입력할때는      addEventListener 를 이용하여 클릭하는 순간 원하는 정보를 찾을수있도록 만들었습니다.
+
+# 배운것들.
+
+* 자바스크립트 DOM 에 대해서 이해하게 되었고, 어떻게 API를 불러와야하는지 또한 백엔드와 협업할때는 어떤식으로 파일을 불러오고 원하는 정보를 일률적으로 나타낼수있는지에 대해서 공부하게되었습니다. 
