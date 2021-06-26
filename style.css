@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Poppins&display=swap');
 *{margin: 0;padding: 0;}
+
 body{font-family: 'Pangolin', cursive;}
 .header{
     width: 100%; 
@@ -8,7 +9,7 @@ body{font-family: 'Pangolin', cursive;}
     
 }
 .header .inner{width: 1180px; margin:0 auto;position: relative; height: 70px;}
-.header .inner h1{ font-size: 70px; position: absolute; top:10px; left:0px; letter-spacing: -10px;}
+.header .inner >a{ font-size: 70px; position: absolute; top:10px; left:0px; letter-spacing: -10px; text-decoration: none; color:#111;}
 .header .inner ul {position: absolute; left:18%; top:50%; transform:translateY(-50%);overflow:hidden; font-weight: 800;}
 .header .inner ul li{
     float: left; list-style: none;
